@@ -1,0 +1,560 @@
+body,
+html {
+  box-sizing: border-box;
+  /* https://images6.alphacoders.com/423/423653.jpg */
+  /* https://i.redd.it/emjlbj3c0nq31.jpg */
+  /* background: url(https://images6.alphacoders.com/423/423653.jpg) no-repeat center center; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* background-color: #434BE7; */
+  width: 100%;
+  height: 100%;
+  /*https://i.redd.it/emjlbj3c0nq31.jpg*/
+}
+
+.prenzy-nav
+{
+  display: flex;
+  /* flex-wrap: wrap; */
+	/*position: sticky;*/
+  width: inherit;
+  justify-content: space-between;
+	/* height: 130; */
+	background-color: #232324;
+	padding-top: 15px;
+	padding-bottom: 15px;
+    /*margin:40px 60px;*/
+}
+
+.image
+{
+	display: inline-block;
+	margin: 0;
+	display: flex;
+}
+
+.test
+{
+	display: inline-block;
+}
+
+.main-nav
+{
+	display: flex;
+  /* justify-content: space-between; */
+  width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a
+{
+	text-decoration: none;
+	color: white;
+}
+
+
+.nav-list
+{
+	font-family: 'Montserrat', sans-serif;
+	margin-left: 20px;
+	margin-right: 20px;
+	align-self: center;
+	padding: 20px;
+}
+
+a:hover
+{
+	text-decoration: none;
+	color: #bfbaba;
+}
+
+.register
+{
+	margin-left: auto;
+	margin-right: 50px;
+}
+
+.hamburger
+{
+  display: none;
+  background: transparent;
+  border: 0;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+  margin-right: 1em;
+}
+
+.hamburger:focus
+{
+  outline: none;
+}
+
+.prenzy-ovo
+{
+  height: 100%;
+  display: flex;
+  background: url(https://images6.alphacoders.com/423/423653.jpg) no-repeat center center;
+  justify-content: center;
+}
+
+.darker
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(45deg, black, transparent);
+}
+
+.slogan
+{
+  /* display: flex; */
+  /* align-self: center; */
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4em;
+  text-align: center;
+  /* background: black; */
+}
+
+h1
+{
+	/*text-align: center;*/
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.sticky
+{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.info
+{
+  color: white;
+  padding: 50px;
+  /* display: flex; */
+  background: #434BE7;
+}
+
+.about
+{
+  display: flex;
+}
+
+.sobre
+{
+  padding: 30px;
+}
+
+img
+{
+  width: inherit;
+}
+
+.services
+{
+  padding: 30px;
+  background: #434BE7;
+}
+
+h2
+{
+	line-height: 1.5;
+	font-size: 1em;
+}
+
+.list
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  /* display: flex; */
+  list-style: none;
+  margin: 0;
+  padding: 20px 0px;
+}
+
+.box
+{
+  background-color: white;
+  margin: 15px;
+  border-radius:30px;
+  border:2px solid #bbb;
+  padding: 30px;
+
+}
+
+.no-mar-left
+{
+  margin-left: 0;
+}
+
+.no-mar-right
+{
+  margin-right: 0;
+}
+
+h3
+{
+  font-size: 2.5em;
+  color: black;
+  padding-top: 20px;
+}
+
+.prenzy-form
+{
+  text-align: center;
+  /* padding: 50px; */
+}
+
+#mc_embed_signup
+{
+  background:transparent;
+  clear:left;
+  padding: 50px;
+  text-align: center;
+  width: 60%;
+}
+
+.mc-field-group
+{
+  /* display: flex; */
+  padding: 20px;
+}
+
+
+
+@media only screen and (max-width: 1024px)
+{
+  .prenzy-nav
+  {
+    flex-wrap: wrap;
+    position: absolute;
+    /* height: 100vh; */
+  }
+
+  .hamburger
+  {
+    display: block;
+    padding: 0;
+  }
+
+  /* .fa.fa-bars:hover
+  {
+    color: #bfbaba;
+  } */
+
+  .fa.fa-bars:active
+  {
+    color: #bfbaba;
+    transform: scale(1.2);
+  }
+
+  .main-nav
+  {
+    /* position: fixed; */
+    display: none;
+    width: 100%;
+    /* height: 100vh; */
+    flex-direction: column;
+    margin-top: 2em;
+    transform: translateX(120%);
+    transition: transform 0.4s ease;
+  }
+
+  .register
+  {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .nav-list
+  {
+
+    /* margin-right: 20px;; */
+  }
+
+  .main-nav.show
+  {
+    display: block;
+    /* height: 50vh; */
+    transform: translateX(0);
+  }
+
+  /* .nav-list
+  {
+    display: none;
+  } */
+
+  .prenzy-ovo
+  {
+    height: 100%;
+    display: flex;
+  }
+
+  .slogan
+  {
+    display: block;
+    width: 70%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .list
+  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .box
+  {
+    padding: 25px;
+  }
+
+  .no-mar-left
+  {
+    margin-left: 15px;
+  }
+
+  .no-mar-right
+  {
+    margin-right: 15px;
+  }
+
+  #mc_embed_signup
+  {
+    width: 80%;
+    padding: 30px;
+  }
+
+}
+
+@media only screen and (max-width: 750px)
+{
+  .prenzy-logo
+  {
+    width: auto;
+    height: 60px;
+  }
+
+  .prenzy-ovo
+  {
+    height: 80%;
+    display: flex;
+  }
+
+  .info
+  {
+    padding: 30px;
+  }
+
+  .about
+  {
+    display: grid;
+  }
+
+  .sobre
+  {
+    padding: 0px;
+  }
+
+  .services
+  {
+    margin-top: 30px;
+    padding: 0px;
+  }
+
+  .list
+  {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .box
+  {
+    margin: 0px 0px 20px 0px;
+    background-color: white;
+    /* margin: 15px; */
+    border-radius:30px;
+    border:2px solid #bbb;
+    padding: 20px;
+
+  }
+
+  h3
+  {
+    padding-top: 10px;
+  }
+
+  .prenzy-form
+  {
+    padding: 20px;
+  }
+
+  #mc_embed_signup
+  {
+    padding: 0px;
+    width: 100%;
+  }
+
+
+}
+
+/* .new-list
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  margin: 0;
+  padding: 20px 0px;
+} */
+
+/* .box:hover
+{
+  background-color: #eaeaea;
+  transform: scale(1.05);
+} */
+
+
+
+h4
+{
+  color: black;
+  font-size: 1em;
+}
+
+.box-content > img {
+    width: 100%;
+}
+
+p
+{
+  font-size: 2em;
+}
+
+.mark
+{
+  background: transparent;
+  padding: 10px;
+}
+
+.my-button
+{
+  border-radius: 30px;
+  background: white;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  margin: 15px;
+  font-size: 30px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  /* transition: transform 0.2s ease; */
+}
+
+.my-button:hover
+{
+  background-color: #e2e2e2;
+  color: black;
+}
+
+.my-button:active
+{
+  border: none;
+  outline: none;
+  transform: scale(1.1);
+
+}
+
+footer
+{
+	/* display: flex; */
+	background: #232324;
+  padding-bottom: 50px;
+}
+
+.bottom > img
+{
+  width: auto;
+}
+
+.bottom
+{
+  display: flex;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.contact-wrap
+{
+  display: inline-block;
+}
+
+h5
+{
+  color: white;
+  font-size: 1em;
+}
+
+.contacts
+{
+  color: white;
+}
+
+.media
+{
+  color: white;
+  display: flex;
+}
+
+.fa.foot
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  padding: 20px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 5px;
+  background-color: #323233;
+  border-radius: 10px;
+}
+
+.fa-facebook
+{
+  /* background-color: lightgreen; */
+}
+
+.fa:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.container.prenzy-mail
+{
+  /* margin-bottom: 50px; */
+}
+
+.prenzy-mail > h5
+{
+  margin-left: 32px;
+}
+
+h6
+{
+  margin-left: 32px;
+  color: white;
+  font-weight: 300;
+}
